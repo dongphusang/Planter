@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Planter</string>
+    <string name="first_entry">My Collection</string>
 </resources>
