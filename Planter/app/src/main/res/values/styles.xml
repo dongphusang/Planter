@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <style name="rectangular_cardview">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+    </style>
+
+    <style name="left_square_cardview">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+    </style>
+
+    <style name="right_rec_cardview">
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">120dp</item>
+    </style>
+
+
+</resources>

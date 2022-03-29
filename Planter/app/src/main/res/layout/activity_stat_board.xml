@@ -4,6 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pri_variant"
     tools:context=".StatBoard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Humidity & temperature -->
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="40dp"
+            style="@style/rectangular_cardview"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_column="0"
+                style="@style/left_square_cardview"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_column="1"
+                android:layout_gravity="end"
+                style="@style/right_rec_cardview" />
+        </GridLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_gravity="bottom"
+            app:cardCornerRadius="20dp"/>
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
