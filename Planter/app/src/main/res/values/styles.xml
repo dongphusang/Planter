@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="rectangular_cardview">
-        <item name="android:layout_marginLeft">20dp</item>
-        <item name="android:layout_marginRight">20dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
         <item name="cardCornerRadius">15dp</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">250dp</item>
+        <item name="android:layout_height">300dp</item>
     </style>
 
-    <style name="left_square_cardview">
-        <item name="android:layout_marginLeft">20dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
-        <item name="cardCornerRadius">15dp</item>
-        <item name="android:layout_width">120dp</item>
-        <item name="android:layout_height">120dp</item>
+    <style name="stat_labels">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_columnWeight">1</item>
     </style>
 
-    <style name="right_rec_cardview">
-        <item name="android:layout_marginRight">20dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
-        <item name="cardCornerRadius">15dp</item>
-        <item name="android:layout_width">220dp</item>
-        <item name="android:layout_height">120dp</item>
+    <style name="stat_data">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_columnWeight">1</item>
     </style>
+
+
 
 
 </resources>

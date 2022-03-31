@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Planter</string>
     <string name="first_entry">My Collection</string>
+    <string name="first_plant_name">No Plant</string>
+    <string name="humidity_label">Humidity</string>
+    <string name="temp_label">Temperature</string>
+    <string name="venti_label">Ventilation</string>
+    <string name="soil_moisture_label">Soil Moisture</string>
+    <string name="water_tank_label">Water Tank</string>
+    <string name="last_watering">Last Watering</string>
+
 </resources>
