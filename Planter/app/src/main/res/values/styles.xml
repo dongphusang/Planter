@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <style name="intro_button">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">220dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
     <style name="rectangular_cardview">
         <item name="android:layout_marginTop">20dp</item>
         <item name="android:layout_marginLeft">10dp</item>
