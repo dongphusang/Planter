@@ -60,10 +60,10 @@ public class StatBoard extends AppCompatActivity implements View.OnTouchListener
         lighting.setText(influxObject.getDataCollection()[2]);
         warning.setText(influxObject.getDataCollection()[0]);
         soilMoistStat.setText(influxObject.getDataCollection()[1]);
-        humidityStat.setText(influxObject.getDataCollection()[3]);
-        tempStat.setText(influxObject.getDataCollection()[4]);
+        humidityStat.setText(influxObject.getDataCollection()[3]+"%");
+        tempStat.setText(influxObject.getDataCollection()[4]+"C");
         ventStat.setText(influxObject.getDataCollection()[5]);
-        wateringStat.setText(influxObject.getDataCollection()[6]);
+        wateringStat.setText(influxObject.getDataCollection()[6]+"m");
     }
 
 

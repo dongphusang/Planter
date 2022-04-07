@@ -1,18 +1,19 @@
 package com.github.planter;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     // declaring components
-    Button firstPlant;
-    Button secondPlant;
-    Button thirdPlant;
+    ImageButton firstPlant;
+    ImageButton secondPlant;
+    ImageButton thirdPlant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
