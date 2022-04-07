@@ -4,124 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:animateLayoutChanges="true"
     android:background="@color/pri_variant"
     tools:context=".StatBoard">
 
+
     <LinearLayout
+        android:id="@+id/statBoard"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Humidity & soil moisture -->
-        <androidx.cardview.widget.CardView
-            style="@style/rectangular_cardview">
+        <!-- Stat board -->
+        <androidx.cardview.widget.CardView style="@style/rectangular_cardview">
 
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
-                android:rowCount="3"
-                android:columnCount="3">
+                android:columnCount="3"
+                android:rowCount="3">
 
                 <!-- Humidity -->
                 <TextView
+                    style="@style/stat_labels"
                     android:layout_row="0"
                     android:layout_column="0"
-                    android:text="@string/humidity_label"
-                    style="@style/stat_labels"/>
+                    android:text="@string/humidity_label" />
+
                 <TextView
                     android:id="@+id/humidity_stat"
+                    style="@style/stat_data"
                     android:layout_row="0"
                     android:layout_column="0"
-                    android:text="0%"
-                    style="@style/stat_data"/>
+                    android:text="@string/empty_labels" />
 
                 <!-- Temperature -->
                 <TextView
+                    style="@style/stat_labels"
                     android:layout_row="0"
                     android:layout_column="1"
-                    android:text="@string/temp_label"
-                    style="@style/stat_labels"/>
+                    android:text="@string/temp_label" />
+
                 <TextView
                     android:id="@+id/temp_stat"
+                    style="@style/stat_data"
                     android:layout_row="0"
                     android:layout_column="1"
-                    android:text="24C"
-                    style="@style/stat_data"/>
+                    android:text="@string/empty_labels" />
 
                 <!-- Ventilation -->
                 <TextView
+                    style="@style/stat_labels"
                     android:layout_row="0"
                     android:layout_column="2"
-                    android:text="@string/venti_label"
-                    style="@style/stat_labels"/>
+                    android:text="@string/venti_label" />
+
                 <TextView
                     android:id="@+id/venti_stat"
+                    style="@style/stat_data"
                     android:layout_row="0"
                     android:layout_column="2"
-                    android:text="ON"
-                    style="@style/stat_data"/>
+                    android:text="@string/empty_labels" />
 
                 <!-- Soil Moisture -->
                 <TextView
+                    style="@style/stat_labels"
                     android:layout_row="1"
                     android:layout_column="0"
-                    android:text="@string/soil_moisture_label"
-                    style="@style/stat_labels"/>
+                    android:text="@string/soil_moisture_label" />
+
                 <TextView
                     android:id="@+id/soilmoist_stat"
+                    style="@style/stat_data"
                     android:layout_row="1"
                     android:layout_column="0"
-                    android:text="20%"
-                    style="@style/stat_data"/>
+                    android:text="@string/empty_labels" />
 
                 <!-- Water Tank -->
                 <TextView
+                    style="@style/stat_labels"
                     android:layout_row="1"
                     android:layout_column="1"
-                    android:text="@string/water_tank_label"
-                    style="@style/stat_labels"/>
+                    android:text="@string/lighting_label" />
+
                 <TextView
-                    android:id="@+id/watertank_stat"
+                    android:id="@+id/lighting_stat"
+                    style="@style/stat_data"
                     android:layout_row="1"
                     android:layout_column="1"
-                    android:text="0%"
-                    style="@style/stat_data"/>
+                    android:text="@string/empty_labels" />
 
                 <!-- Last Watering-->
                 <TextView
+                    style="@style/stat_labels"
                     android:layout_row="1"
                     android:layout_column="2"
-                    android:text="@string/last_watering"
-                    style="@style/stat_labels"/>
+                    android:text="@string/last_watering" />
+
                 <TextView
                     android:id="@+id/watering_stat"
+                    style="@style/stat_data"
                     android:layout_row="1"
                     android:layout_column="2"
-                    android:text="30m"
-                    style="@style/stat_data"/>
+                    android:text="@string/empty_labels" />
 
                 <!-- Warning -->
                 <TextView
                     android:id="@+id/warning"
+                    style="@style/stat_labels"
                     android:layout_row="2"
                     android:layout_column="1"
                     android:layout_gravity="center"
                     android:layout_marginTop="-2dp"
-                    android:text="(!) Refill your water tank"
-                    android:textColor="@color/secondary"
-                    style="@style/stat_labels"/>
+                    android:text="@string/empty_labels"
+                    android:textColor="@color/secondary" />
             </GridLayout>
         </androidx.cardview.widget.CardView>
 
-
-
         <!-- Plant image & other info -->
         <androidx.cardview.widget.CardView
-            android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="370dp"
             android:layout_gravity="bottom"
+            android:layout_marginTop="40dp"
             app:cardCornerRadius="20dp">
 
             <ImageView
@@ -129,7 +136,7 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/cac"/>
+                android:src="@drawable/cac" />
 
             <TextView
                 android:id="@+id/plant_name"
@@ -138,9 +145,9 @@
                 android:layout_marginTop="200dp"
                 android:padding="20dp"
                 android:text="Cactus"
+                android:textAlignment="center"
                 android:textSize="50dp"
-                android:textStyle="bold"
-                android:textAlignment="center"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/days_existed"
@@ -148,12 +155,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="280dp"
                 android:text="12 days"
-                android:textSize="20sp"
-                android:textAlignment="center"/>
-
+                android:textAlignment="center"
+                android:textSize="20sp" />
         </androidx.cardview.widget.CardView>
-
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

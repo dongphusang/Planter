@@ -6,7 +6,8 @@
     <string name="temp_label">Temperature</string>
     <string name="venti_label">Ventilation</string>
     <string name="soil_moisture_label">Soil Moisture</string>
-    <string name="water_tank_label">Water Tank</string>
+    <string name="lighting_label">Lighting</string>
     <string name="last_watering">Last Watering</string>
+    <string name="empty_labels">N/A</string>
 
 </resources>
